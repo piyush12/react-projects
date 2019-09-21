@@ -4,7 +4,7 @@ import "./styles.css";
 const API_KEY =
   "https://gist.githubusercontent.com/Miserlou/c5cd8364bf9b2420bb29/raw/2bf258763cdddd704f8ffd3ea9a3e81d25e2c6f6/cities.json";
 
-export default class TypeHead extends React.Component {
+class TypeHead extends React.Component {
   state = {
     cities: [],
     searchedCities: [],
@@ -64,3 +64,5 @@ export default class TypeHead extends React.Component {
     );
   }
 }
+
+export default TypeHead;

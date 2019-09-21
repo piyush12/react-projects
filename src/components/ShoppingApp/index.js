@@ -120,7 +120,11 @@ class Shopping extends React.Component {
         <ProductRow>
           {products &&
             products.map(item => (
-              <ProductsItem item={item} addItem={this.addToCart} />
+              <ProductsItem
+                key={item.id}
+                item={item}
+                addItem={this.addToCart}
+              />
             ))}
         </ProductRow>
       </React.Fragment>
