@@ -7,12 +7,12 @@ const Products = ({ item, addItem }) => {
         <h3>{item.name}</h3>
         <div className="product-img">
           <img src={item.image} alt="" />
-          <div className="product-price">Price {item.price}$</div>
-          <div className="product-btn">
-            <button className="btn btn-primary" onClick={() => addItem(item)}>
-              Buy
-            </button>
-          </div>
+        </div>
+        <div className="product-price">Price {item.price}$</div>
+        <div className="product-btn">
+          <button className="btn btn-primary" onClick={() => addItem(item)}>
+            Buy
+          </button>
         </div>
       </div>
     </div>

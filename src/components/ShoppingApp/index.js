@@ -102,7 +102,15 @@ class Shopping extends React.Component {
     const { products, inCart } = this.state;
     return (
       <React.Fragment>
-        <h1>Shopping Cart</h1>
+        <h1
+          style={{
+            fontSize: 16,
+            fontWeight: "bold",
+            textAlign: "left"
+          }}
+        >
+          Shopping Cart
+        </h1>
         <ShoppingCart
           items={inCart}
           addItem={this.addItem}

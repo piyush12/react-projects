@@ -1,18 +1,31 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import TimerApp from "./TimerApp";
-import TypeHead from "./TypeHead/TypeHead";
-import TicTacToe from "./TicTacToe";
-import BookList from "./BookList";
-import ShoppingApp from "./ShoppingApp";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Navigation from "./components/Navigation";
+import TimerApp from "./components/TimerApp";
+import TypeHead from "./components/TypeHead/TypeHead";
+import TicTacToe from "./components/TicTacToe";
+import BookList from "./components/BookList";
+import ShoppingApp from "./components/ShoppingApp";
 
 import "./styles.css";
 
 function App() {
   return (
-    <div className="App">
-      <ShoppingApp />
-    </div>
+    <Router>
+      <div className="App container">
+        <Navigation />
+
+        <Switch>
+          <Route exact path="/" component={TimerApp} />
+          <Route path="/timerApp" component={TimerApp} />
+          <Route path="/autoComplete" component={TypeHead} />
+          <Route path="/tictactoe" component={TicTacToe} />
+          <Route path="/booklist" component={BookList} />
+          <Route path="/shoppingApp" component={ShoppingApp} />
+        </Switch>
+      </div>
+    </Router>
   );
 }
 

@@ -40,7 +40,7 @@ class ShoppingCart extends React.Component {
                 />
               ))}
             <tr>
-              <td colSpan="5" className="text-right">
+              <td colSpan="6" className="text-left">
                 Total : <strong>{totalPrice}$</strong>
               </td>
             </tr>
