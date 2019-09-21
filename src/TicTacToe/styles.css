@@ -1,0 +1,22 @@
+.grid-col {
+  display: inline-block;
+  vertical-align: middle;
+}
+.grid-row {
+  border: 1px solid #000;
+  width: 100px;
+  height: 100px;
+  background: #fff;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 100px;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+.clearfix {
+  clear: both;
+  height: 0;
+}

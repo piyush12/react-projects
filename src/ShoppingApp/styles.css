@@ -1,0 +1,41 @@
+.product-row {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.product-box {
+  border: 1px solid #000;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+.product-box h3 {
+  font-size: 16px;
+  font-weight: bold;
+}
+.product-img {
+}
+.product-img img {
+  height: auto;
+  width: 100%;
+  margin-bottom: 5px;
+}
+.product-price {
+  font-weight: bold;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.product-btn .btn {
+  display: block;
+  width: 100%;
+}
+.product-cart {
+  margin: 30px 0;
+}
+.product-cart h1 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.product-cart img {
+  width: 50px;
+}
