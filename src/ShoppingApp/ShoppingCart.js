@@ -14,10 +14,10 @@ class ShoppingCart extends React.Component {
 
     return (
       <div className="product-cart text-left">
-        <h1 class="btn btn-primary">
-          Cart <span class="badge badge-light">{totalQuantity}</span>
+        <h1 className="btn btn-primary">
+          Cart <span className="badge badge-light">{totalQuantity}</span>
         </h1>
-        <table class="table">
+        <table className="table">
           <thead>
             <tr>
               <th scope="col">#</th>
@@ -32,6 +32,7 @@ class ShoppingCart extends React.Component {
             {items &&
               items.map(item => (
                 <CartRow
+                  key={item.id}
                   item={item}
                   addItem={this.props.addItem}
                   removeItem={this.props.removeItem}
